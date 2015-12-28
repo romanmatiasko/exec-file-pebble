@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exec File app config</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400"
+          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <h1 class="title">Exec File app config</h1>
+
+    <div class="item-container">
+      <div class="item-container-content">
+        <div class="item">
+          Exec File app needs an access via HTTP to the server that will execute
+          the script hooks.
+        </div>
+      </div>
+    </div>
+
+    <form action="#" method="POST">
+      <div class="item-container">
+        <div class="item-container-header">IP address</div>
+        <div class="item-container-content">
+          <label class="item">
+            <div class="item-input-wrapper">
+              <input type="text"
+                     class="item-input"
+                     name="ip_address"
+                     placeholder="192.168.1.0">
+            </div>
+          </label>
+        </div>
+        <div class="item-container-footer">
+          Enter destination IP address of the running server.
+        </div>
+      </div>
+
+      <div class="item-container">
+        <div class="item-container-header">Port</div>
+        <div class="item-container-content">
+          <label class="item">
+            <div class="item-input-wrapper">
+              <input type="text"
+                     class="item-input"
+                     name="port"
+                     placeholder="3030">
+            </div>
+          </label>
+        </div>
+        <div class="item-container-footer">
+          Specify the port on which the server is running.
+        </div>
+      </div>
+
+      <div class="item-container">
+        <div class="button-container">
+          <input id="submit"
+                 type="submit"
+                 class="item-button"
+                 value="SUBMIT">
+        </div>
+      </div>
+    </form>
+
+    <script>
+      void function() {
+        var ipInput = document.querySelector('input[name="ip_address"]');
+        var portInput = document.querySelector('input[name="port"]');
+
+        try {
+          var config = JSON.parse(decodeURIComponent(
+            window.location.search.match(/config=(.*)/)[1]));
+          ipInput.value = config.ip_address;
+          portInput.value = config.port;
+        } catch (e) {}
+
+        document.querySelector('form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          var newConfig = encodeURIComponent(JSON.stringify({
+            ip_address: ipInput.value,
+            port: portInput.value,
+          }));
+          window.location.href = 'pebblejs://close#' + newConfig;
+        });
+      }();
+    </script>
+  </body>
+</html>

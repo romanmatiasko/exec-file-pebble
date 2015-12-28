@@ -1,0 +1,8 @@
+.DS_Store
+
+node_modules/
+*.log
+
+build
+.lock-waf*
+pebble-js-app.js

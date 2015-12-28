@@ -1,0 +1,31 @@
+{
+  "uuid": "3e5fd808-f0b3-4f99-a20c-1d747f331f9c",
+  "shortName": "Exec File",
+  "longName": "Exec File",
+  "companyName": "Roman Matiasko",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt", "chalk"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "menuItemKey": 0,
+    "filesLengthKey": 1,
+    "fileNameKey": 2,
+    "fileLabelKey": 3,
+    "msgSuccessKey": 4,
+    "msgErrorKey": 5
+  },
+  "resources": {
+    "media": [{
+      "menuIcon": true,
+      "type": "bitmap",
+      "name": "IMAGE_MENU_ICON",
+      "file": "images/menu_icon_bw.png"
+    }]
+  },
+  "capabilities": [
+    "configurable"
+  ]
+}

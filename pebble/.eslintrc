@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "ecmaFeatures": {
+    "modules": false
+  },
+  "globals": {
+    "Pebble": true
+  },
+  "rules": {
+    "strict": 0
+  }
+}

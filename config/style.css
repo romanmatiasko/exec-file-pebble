@@ -1,0 +1,99 @@
+/*
+ * Slightly modified part of styles from Slate framework.
+ * https://github.com/pebble/slate
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  background-color: #eaeaea;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.title {
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+}
+
+.item {
+  padding: 10px;
+  display: block;
+}
+
+.item-container {
+  color: #333;
+  margin-top: 15px;
+}
+
+.item-container-header {
+  padding: 3px 10px;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-size: .8em;
+  font-weight: 500;
+  color: #888;
+}
+
+.item-container-content {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.item-container-footer {
+  padding: 3px 10px;
+  font-size: .7em;
+  line-height: 1.4em;
+  color: #888;
+}
+
+.item-input-wrapper {
+  border-radius: 5px;
+  border: 2px solid #dedede;
+}
+
+
+.item-input {
+  border: 0;
+  background-color: transparent;
+  padding: 7px 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.item-button {
+  width: 60%;
+  height: 35px;
+  background-color: #ff4700;
+  border-radius: 5px;
+  color: white;
+  font-size: .8em;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}

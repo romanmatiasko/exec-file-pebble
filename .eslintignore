@@ -1,0 +1,4 @@
+server/node_modules/
+pebble/node_modules/
+pebble/build/
+pebble/src/js/pebble-js-app.js

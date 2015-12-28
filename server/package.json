@@ -1,0 +1,16 @@
+{
+  "name": "exec-file-pebble-server",
+  "version": "1.0.0",
+  "description": "Server for Exec File pebble app",
+  "dependencies": {
+    "co-body": "^4.0.0",
+    "koa": "^1.1.2",
+    "koa-router": "^5.3.0"
+  },
+  "scripts": {
+    "start": "NODE_DEBUG=ExecFile ./app.js"
+  },
+  "engines": {
+    "node": "^4.2.4"
+  }
+}
