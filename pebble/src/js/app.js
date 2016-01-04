@@ -102,7 +102,9 @@ void function() {
 
   Pebble.addEventListener('showConfiguration', () => {
     const configEncoded = encodeURIComponent(JSON.stringify(getConfig()));
-    Pebble.openURL(`http://192.168.1.127:8888?config=${configEncoded}`);
+    const url = 'https://cdn.rawgit.com/romanmatiasko/exec-file-pebble/' +
+      'master/config/index.html';
+    Pebble.openURL(`${url}?config=${configEncoded}`);
   });
 
   Pebble.addEventListener('webviewclosed', ({response}) => {

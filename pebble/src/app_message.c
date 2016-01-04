@@ -79,7 +79,7 @@ void app_message_deinit(void) {
 
   if (available_files == NULL) return;
   for (int i = 0; i < available_files_length; i++) {
-    if (available_files[i] == NULL) return;
+    if (available_files[i] == NULL) break;
     for (int j = 0; j < file_tuple_length; j++) {
       free(available_files[i][j]);
     }

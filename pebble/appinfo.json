@@ -3,6 +3,7 @@
   "shortName": "Exec File",
   "longName": "Exec File",
   "companyName": "Roman Matiasko",
+  "versionCode": 1,
   "versionLabel": "1.0",
   "sdkVersion": "3",
   "targetPlatforms": ["aplite", "basalt", "chalk"],
